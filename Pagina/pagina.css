@@ -1,0 +1,84 @@
+/* Estilização dos cards */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Love Ya Like A Sister', cursive;
+  background: black;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 2px 5px gray;
+}
+
+#logo{
+  margin: 10px;
+  max-width: 60px;
+}
+
+.container-pessoa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    max-height: 700px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin: 10px;
+    color: #fff;
+    background: rgb(61, 61, 61);
+    box-shadow: 5px 5px 5px gray;
+    word-wrap: break-word;
+  }
+  
+  
+  .pessoa h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .pessoa p {
+    margin-bottom: 10px;
+  }
+  
+  .pessoa img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+.dados {
+  max-width: 300px;
+}
+  #sobreMim {
+    border: 1px solid gray;
+    /* word-wrap: break-word; */
+  }
+
+footer {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-top: 2px solid gray;
+  margin-top: 150px;
+  height: 50px;
+}
