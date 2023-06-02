@@ -1,0 +1,161 @@
+/* Estilos gerais */
+body {   
+    margin: 0;
+    padding: 0; 
+    font-family: 'Love Ya Like A Sister', cursive;
+    background: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 2px 5px gray;
+}
+
+#logo{
+    margin: 10px;
+    max-width: 60px;
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    margin-top:20px;
+    max-width: 120px;
+}
+
+.bemVindo {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.p01 {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 5px 5px 5px gray;
+    background: rgb(61, 61, 61);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-informacoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+.dados:hover{
+    background-color: #FF66C4;
+}
+
+.dados::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+
+.dados {
+    max-width: 100%;
+    margin-top: 5px;    
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+input[type="file"]{
+    display: none;
+}
+
+.enviar-arquivo {
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.enviar-arquivo:hover{
+    background-color: #FF66C4;
+}
+  
+.container-enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;    
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+input[type="submit"]:hover{
+    background-color: #FF66C4;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top: 2px solid gray;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+@media(max-width: 535px){
+    .bemVindo {
+        font-size: 25px;
+    }
+
+    form {
+        width: 400px;
+    }
+
+    .enviar-arquivo {
+        padding: 15px;
+        width: 120px;
+        font-size: 15px;
+    }
+}
+
