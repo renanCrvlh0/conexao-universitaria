@@ -23,7 +23,8 @@ form.addEventListener('submit', (event) => {
         console.log(novoCadastro);
         cadastros.add(novoCadastro).then((docRef) => {
             form.reset();
-            alert(`Parabéns ${novoCadastro.nome}, você foi cadastrado com sucesso!`)
+            alert(`Parabéns ${novoCadastro.nome}, seu cadastro foi realizado com sucesso!`)
+            window.location.href = "https://conexao-universitaria.web.app/";
         })
             .catch((error) => {
                 alert(`Cadastro não pode ser concluido`)

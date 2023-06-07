@@ -11,7 +11,7 @@ html, body {
     margin: 0;
     padding: 0; 
     height: 100%;
-    background: rgb(21, 19, 19);
+    background: #000000;
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
@@ -43,6 +43,11 @@ main{
     min-height: calc(100% - (var(--header-height) + var(--footer-height)));
 }
 
+#explicacao {
+    color: #fff;
+    text-align: center;
+}
+
 .logo{
     margin-top:20px;
     margin-bottom: 50px;
@@ -61,8 +66,9 @@ main{
 }
 
 .item-cadastro {
-    background-color: #6d6d6d;
-    box-shadow: 4px 4px 7px gray;
+    background-color: #6d6d6d76;
+    box-shadow: 5px 3px 7px gray;
+    border: 1px solid #bababa;
     width: 320px;
     padding: 10px;
     border-radius: 15px;
@@ -73,6 +79,9 @@ main{
 
 .container-foto {
     text-align: center;
+    position: relative;
+    height: 150px;
+    
 }
 
 h3 {
@@ -84,6 +93,17 @@ h3 {
     height: 140px;
     object-fit: cover;
     border-radius: 20%;
+    box-shadow: 2px 2px 5px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);     
+}
+
+.item-foto:hover {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
 }
 
 .item-nome {
@@ -127,7 +147,7 @@ span {
     height: 100px;
     overflow-y: auto;
     margin-top: 10px;
-    padding: 0 10px;
+    padding: 2px 10px;
 }
 
 .container-sobre::-webkit-scrollbar {
