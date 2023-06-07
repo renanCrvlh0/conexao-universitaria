@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Conexão Universitária</title>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="./src/js/config.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/css/cadastro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.svg" alt="logo do site" id="logo">
+    </header>
+
+    <main>
+        <img src="imagens/logo.svg" alt="logo do site" class="logo">
+        <h1 id="bemVindo">Bem vindos ao Conexão Universitária</h1>
+        <p id="p01">Procurando o crush? Cadastre-se e veja se encontra o par ideal!</p>
+        <form id="form-cadastro">
+            <fieldset id="form-entradas">
+                <legend>Cadastro</legend>
+                
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite aqui o seu nome" required>                
+            
+                <label for="telefone">Whatsapp:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite aqui o seu Whatsapp" required>
+
+                <label for="universidade">Universidade:</label>
+                <input type="text" id="universidade" name="universidade" placeholder="Digite aqui a universidade em que estuda" required>
+
+                <label for="genero">Você se identifica como?</label>
+                <select name="genero" id="genero" class="dados">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Transgenero">Transgênero</option>
+                    <option value="Genero-neutro">Gênero Neutro</option>
+                    <option value="Nao-binario">Não-binário</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <label for="sobre">Fale um pouco sobre você:</label>
+                <textarea name="sobre" id="sobre" cols="30" rows="10"></textarea>
+
+                <div class="container-arquivo">
+                    <label for="foto" id="enviar-arquivo">Enviar foto</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" required>
+                </div>        
+                
+                <button>Cadastrar</button>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+
+<script src="./src/js/cadastro.js" type="module"></script>
+</body>
+</html>

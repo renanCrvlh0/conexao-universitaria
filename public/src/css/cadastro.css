@@ -1,0 +1,163 @@
+:root{
+    --header-height: 70px;
+    --footer-height: 60px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {   
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    background: black;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    height: var(--header-height);
+    padding: 15px;
+    border-bottom: 3px solid #FF66C4;
+}
+
+#logo{
+    margin: 10px;
+    max-width: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: calc(100% - (var(--header-height) + var(--footer-height)));
+}
+
+.logo{
+    margin-top:40px;
+    max-width: 120px;
+}
+
+#bemVindo {
+    color: #fff;
+}
+
+#p01 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#form-cadastro {
+    width: 70%;
+    padding: 15px;
+    margin-top: 20px;    
+}
+
+#form-entradas {
+    border-radius: 10px;
+    border: 4px solid #FF66C4;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: #FF66C4;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FF66C4;
+}
+
+#form-entradas input,
+#form-entradas textarea,
+#form-entradas select {
+    margin-bottom: 15px;
+    background-color: rgb(76, 76, 76);
+    border-radius: 10px;
+    border: 4px solid #FF66C4;
+    padding: 10px;
+    color: #fff;
+    appearance: none;
+    font-size: 18px;
+}
+
+#form-entradas input:hover,
+#form-entradas textarea:hover,
+#form-entradas select:hover {
+    background-color: #FF66C4;
+}
+
+#form-entradas input::placeholder,
+#form-entradas textarea::placeholder,
+#form-entradas {
+    color: #fff;
+    font-size: 16px;
+}
+
+#form-entradas option {
+    color: #fff;
+}
+
+#form-entradas button {
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(76, 76, 76);
+    border: 4px solid #FF66C4;
+}
+
+#form-entradas button:hover {
+    cursor: pointer;
+    background-color: #FF66C4
+}
+
+form label {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF66C4;
+}
+
+input[type="file"]{
+    display: none;
+}
+#enviar-arquivo {
+    padding: 18px;
+    border-radius: 10px;
+    background-color: rgb(76, 76, 76);
+    border: 4px solid #FF66C4;
+    width: 40%;
+    color: #FF66C4;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#enviar-arquivo:hover {
+    cursor: pointer;
+    background-color: #FF66C4;
+    color: #fff;
+}
+
+
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    color: #fff;
+    border-top: 3px solid #FF66C4;
+    padding: 10px;
+    height: var(--footer-height);
+    font-size: 18px;
+    font-weight: bold;
+}
+
